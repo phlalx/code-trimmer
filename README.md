@@ -37,22 +37,22 @@ file: fact.c
       return 0;
     }
 
-./trimcode.py foobar.c -o dest generates dest/fact.c:
+`./trimcode.py foobar.c -o dest` generates dest/fact.c:
 
-#include <stdio.h>
+    #include <stdio.h>
 
-void print_hello() {
-  // TODO
-}
+    void print_hello() {
+      // TODO
+    }
 
-int fact(int x) {
-  // TODO
-  return 0; // CHANGE THIS
-}
+    int fact(int x) {
+      // TODO
+      return 0; // CHANGE THIS
+    }
 
-int main() {
-  int x = 5;
-  print_hello();
-  printf("%d! = %d\n", x, fact(x));
-  return 0;
-}
+    int main() {
+      int x = 5;
+      print_hello();
+      printf("%d! = %d\n", x, fact(x));
+      return 0;
+    }
